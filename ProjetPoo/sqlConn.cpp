@@ -4,7 +4,7 @@
 
 NS_sql_Conn::sqlConn::sqlConn(void)
 {
-	this->sCnx = "Data Source=ARTHUR\\MSSQLSERVER01;Initial Catalog=Projet;Integrated Security=True;Encrypt=False";
+	this->sCnx = "Data Source=LAPTOP-JR3JQ30D\\MSSQL_AYSE;Initial Catalog=Projet;Integrated Security=True;Encrypt=False";
 
 	this->sSql = "Rien";
 

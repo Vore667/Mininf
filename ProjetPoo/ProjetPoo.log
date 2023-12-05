@@ -1,3 +1,6 @@
-﻿  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+﻿  FormClient.cpp
+  MyForm.cpp
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Génération de code en cours...
   FormClient.obj : module MSIL détecté ; liens incrémentiels désactivés pour MSIL ; édition de liens complète en cours
-  ProjetPoo.vcxproj -> C:\Users\arthu\source\repos\ProjetPoo\POO-Mininf\x64\Debug\ProjetPoo.exe
+  ProjetPoo.vcxproj -> C:\Users\33637\Documents\GitHub\Mininf\x64\Debug\ProjetPoo.exe
