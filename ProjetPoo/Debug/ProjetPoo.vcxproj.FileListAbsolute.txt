@@ -1,0 +1,12 @@
+C:\Users\arthu\source\repos\ProjetPoo\ProjetPoo\Debug\ProjetPoo.vcxproj.AssemblyReference.cache
+C:\Users\arthu\source\repos\ProjetPoo\ProjetPoo\Debug\ProjetPoo.FormClient.resources
+C:\Users\arthu\source\repos\ProjetPoo\ProjetPoo\Debug\ProjetPoo.MyForm.resources
+C:\Users\arthu\source\repos\ProjetPoo\ProjetPoo\Debug\ProjetPoo.FormPersonnel.resources
+C:\Users\arthu\source\repos\ProjetPoo\ProjetPoo\Debug\ProjetPoo.vcxproj.GenerateResource.cache
+C:\Users\arthu\source\repos\ProjetPoo\POO-Mininf\ProjetPoo\Debug\ProjetPoo.vcxproj.AssemblyReference.cache
+C:\Users\arthu\source\repos\ProjetPoo\POO-Mininf\ProjetPoo\Debug\ProjetPoo.FormClient.resources
+C:\Users\arthu\source\repos\ProjetPoo\POO-Mininf\ProjetPoo\Debug\ProjetPoo.MyForm.resources
+C:\Users\arthu\source\repos\ProjetPoo\POO-Mininf\ProjetPoo\Debug\ProjetPoo.FormPersonnel.resources
+C:\Users\arthu\source\repos\ProjetPoo\POO-Mininf\ProjetPoo\Debug\ProjetPoo.vcxproj.GenerateResource.cache
+C:\Users\arthu\source\repos\ProjetPoo\POO-Mininf\ProjetPoo\Debug\ProjetPoo.FormStatistiques.resources
+C:\Users\arthu\source\repos\ProjetPoo\POO-Mininf\ProjetPoo\Debug\ProjetPoo.FormStock.resources
