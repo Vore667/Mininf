@@ -92,19 +92,23 @@ namespace ProjetPoo {
 			this->tableLayoutPanel1->Controls->Add(this->buttonStock, 3, 0);
 			this->tableLayoutPanel1->Controls->Add(this->buttonStats, 4, 0);
 			this->tableLayoutPanel1->Controls->Add(this->buttonCommandes, 2, 0);
-			this->tableLayoutPanel1->Location = System::Drawing::Point(11, 798);
+			this->tableLayoutPanel1->Location = System::Drawing::Point(7, 511);
+			this->tableLayoutPanel1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 1;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 128)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(1330, 128);
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 82)));
+			this->tableLayoutPanel1->Size = System::Drawing::Size(887, 82);
 			this->tableLayoutPanel1->TabIndex = 0;
 			// 
 			// buttonPersonnel
 			// 
-			this->buttonPersonnel->Location = System::Drawing::Point(3, 3);
+			this->buttonPersonnel->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left));
+			this->buttonPersonnel->Location = System::Drawing::Point(2, 2);
+			this->buttonPersonnel->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->buttonPersonnel->Name = L"buttonPersonnel";
-			this->buttonPersonnel->Size = System::Drawing::Size(260, 122);
+			this->buttonPersonnel->Size = System::Drawing::Size(173, 78);
 			this->buttonPersonnel->TabIndex = 0;
 			this->buttonPersonnel->Text = L"Personnel";
 			this->buttonPersonnel->UseVisualStyleBackColor = true;
@@ -112,9 +116,12 @@ namespace ProjetPoo {
 			// 
 			// buttonClient
 			// 
-			this->buttonClient->Location = System::Drawing::Point(269, 3);
+			this->buttonClient->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left));
+			this->buttonClient->Location = System::Drawing::Point(179, 2);
+			this->buttonClient->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->buttonClient->Name = L"buttonClient";
-			this->buttonClient->Size = System::Drawing::Size(260, 122);
+			this->buttonClient->Size = System::Drawing::Size(173, 78);
 			this->buttonClient->TabIndex = 1;
 			this->buttonClient->Text = L"Client";
 			this->buttonClient->UseVisualStyleBackColor = true;
@@ -122,9 +129,12 @@ namespace ProjetPoo {
 			// 
 			// buttonStock
 			// 
-			this->buttonStock->Location = System::Drawing::Point(801, 3);
+			this->buttonStock->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left));
+			this->buttonStock->Location = System::Drawing::Point(533, 2);
+			this->buttonStock->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->buttonStock->Name = L"buttonStock";
-			this->buttonStock->Size = System::Drawing::Size(260, 122);
+			this->buttonStock->Size = System::Drawing::Size(173, 78);
 			this->buttonStock->TabIndex = 3;
 			this->buttonStock->Text = L"Stock";
 			this->buttonStock->UseVisualStyleBackColor = true;
@@ -132,9 +142,12 @@ namespace ProjetPoo {
 			// 
 			// buttonStats
 			// 
-			this->buttonStats->Location = System::Drawing::Point(1067, 3);
+			this->buttonStats->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left));
+			this->buttonStats->Location = System::Drawing::Point(710, 2);
+			this->buttonStats->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->buttonStats->Name = L"buttonStats";
-			this->buttonStats->Size = System::Drawing::Size(260, 122);
+			this->buttonStats->Size = System::Drawing::Size(173, 78);
 			this->buttonStats->TabIndex = 4;
 			this->buttonStats->Text = L"Statistiques";
 			this->buttonStats->UseVisualStyleBackColor = true;
@@ -142,9 +155,12 @@ namespace ProjetPoo {
 			// 
 			// buttonCommandes
 			// 
-			this->buttonCommandes->Location = System::Drawing::Point(535, 3);
+			this->buttonCommandes->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left));
+			this->buttonCommandes->Location = System::Drawing::Point(356, 2);
+			this->buttonCommandes->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->buttonCommandes->Name = L"buttonCommandes";
-			this->buttonCommandes->Size = System::Drawing::Size(260, 122);
+			this->buttonCommandes->Size = System::Drawing::Size(173, 78);
 			this->buttonCommandes->TabIndex = 2;
 			this->buttonCommandes->Text = L"Commandes";
 			this->buttonCommandes->UseVisualStyleBackColor = true;
@@ -155,25 +171,28 @@ namespace ProjetPoo {
 			this->pictureBox1->BackColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(497, 68);
+			this->pictureBox1->Location = System::Drawing::Point(331, 44);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(367, 358);
+			this->pictureBox1->Size = System::Drawing::Size(245, 229);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(1353, 941);
+			this->ClientSize = System::Drawing::Size(902, 593);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->MaximizeBox = false;
-			this->MaximumSize = System::Drawing::Size(1379, 1154);
+			this->MaximumSize = System::Drawing::Size(925, 755);
+			this->MinimumSize = System::Drawing::Size(920, 640);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->tableLayoutPanel1->ResumeLayout(false);
