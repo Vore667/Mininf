@@ -8,7 +8,7 @@ namespace NS_sql_Map{
 		System::String^ nom;
 		System::String^ prenom;
 	public:
-		System::String^ Select(void);
+		System::String^ Select(System::String^);
 		System::String^ Insert(void);
 		System::String^ Delete(void);
 		System::String^ Update(void);

@@ -1,7 +1,7 @@
 #include "sqlMap.h"
-System::String^ NS_sql_Map::sqlMap::Select(void)
+System::String^ NS_sql_Map::sqlMap::Select(System::String^ tableName)
 {
-	return "SELECT * FROM [Projet].[dbo].[Address]";
+	return "SELECT * FROM [Projet].[dbo].["+tableName+"]";
 }
 System::String^ NS_sql_Map::sqlMap::sqlMap::Insert(void)
 {

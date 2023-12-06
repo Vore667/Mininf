@@ -170,6 +170,9 @@
     <EmbeddedResource Include="FormClient.resx">
       <DependentUpon>FormClient.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCommandes.resx">
+      <DependentUpon>FormCommandes.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormStatistiques.resx">
       <DependentUpon>FormStatistiques.h</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +185,9 @@
     <EmbeddedResource Include="FormPersonnel.resx">
       <DependentUpon>FormPersonnel.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQLScript.sql" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

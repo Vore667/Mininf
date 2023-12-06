@@ -178,7 +178,8 @@ namespace ProjetPoo {
 			// 
 			// dataGridView1
 			// 
-			this->dataGridView1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+			this->dataGridView1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
 			this->dataGridView1->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::DisplayedCells;
@@ -192,6 +193,7 @@ namespace ProjetPoo {
 			// 
 			// btnAffiche
 			// 
+			this->btnAffiche->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->btnAffiche->Location = System::Drawing::Point(13, 307);
 			this->btnAffiche->Name = L"btnAffiche";
 			this->btnAffiche->Size = System::Drawing::Size(250, 100);
@@ -202,6 +204,7 @@ namespace ProjetPoo {
 			// 
 			// btnInsert
 			// 
+			this->btnInsert->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->btnInsert->Location = System::Drawing::Point(13, 413);
 			this->btnInsert->Name = L"btnInsert";
 			this->btnInsert->Size = System::Drawing::Size(250, 100);
@@ -213,6 +216,7 @@ namespace ProjetPoo {
 			// 
 			// btnModifier
 			// 
+			this->btnModifier->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->btnModifier->Location = System::Drawing::Point(13, 519);
 			this->btnModifier->Name = L"btnModifier";
 			this->btnModifier->Size = System::Drawing::Size(250, 100);
@@ -223,6 +227,7 @@ namespace ProjetPoo {
 			// 
 			// btnSupprimer
 			// 
+			this->btnSupprimer->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->btnSupprimer->Location = System::Drawing::Point(13, 625);
 			this->btnSupprimer->Name = L"btnSupprimer";
 			this->btnSupprimer->Size = System::Drawing::Size(250, 100);
@@ -233,7 +238,7 @@ namespace ProjetPoo {
 			// 
 			// panelSelect
 			// 
-			this->panelSelect->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+			this->panelSelect->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->panelSelect->Controls->Add(this->btnVSelect);
 			this->panelSelect->Controls->Add(this->txtBirth);
@@ -316,7 +321,7 @@ namespace ProjetPoo {
 			// 
 			// panelInsert
 			// 
-			this->panelInsert->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+			this->panelInsert->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->panelInsert->Controls->Add(this->label2);
 			this->panelInsert->Controls->Add(this->btnVInsert);
@@ -453,7 +458,7 @@ namespace ProjetPoo {
 			// 
 			// panelUpdate
 			// 
-			this->panelUpdate->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+			this->panelUpdate->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->panelUpdate->Controls->Add(this->btnVModifier);
 			this->panelUpdate->Controls->Add(this->textBox1);
@@ -590,7 +595,7 @@ namespace ProjetPoo {
 			// 
 			// panelDelete
 			// 
-			this->panelDelete->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+			this->panelDelete->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->panelDelete->Controls->Add(this->lbDelete);
 			this->panelDelete->Controls->Add(this->btnVSupprimer);
@@ -678,12 +683,12 @@ namespace ProjetPoo {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1290, 859);
-			this->Controls->Add(this->panelDelete);
 			this->Controls->Add(this->btnSupprimer);
 			this->Controls->Add(this->btnModifier);
 			this->Controls->Add(this->btnInsert);
 			this->Controls->Add(this->btnAffiche);
 			this->Controls->Add(this->dataGridView1);
+			this->Controls->Add(this->panelDelete);
 			this->Controls->Add(this->panelSelect);
 			this->Controls->Add(this->panelInsert);
 			this->Controls->Add(this->panelUpdate);
@@ -710,18 +715,19 @@ namespace ProjetPoo {
 		this->panelInsert->Hide();
 		this->panelUpdate->Hide();
 		this->panelSelect->Hide();
+		this->dataGridView1->Refresh();
 		oSvc = gcnew NS_sql_Function::sqlFunction();
-		
+		this->oDs = this->oSvc->selectionnerToutesLesPersonnes("Rsl", "Personnel");
+		this->dataGridView1->DataSource = this->oDs;
+		this->dataGridView1->DataMember = "Rsl";
 	}
 	private: System::Void btnAffiche_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->panelDelete->Hide();
 		this->panelInsert->Hide();
 		this->panelUpdate->Hide();
 		this->panelSelect->Show();
-		this->dataGridView1->Refresh();
-		this->oDs = this->oSvc->selectionnerToutesLesPersonnes("Rsl");
-		this->dataGridView1->DataSource = this->oDs;
-		this->dataGridView1->DataMember = "Rsl";
+		
+		
 
 	}
 	private: System::Void btnInsert_Click(System::Object^ sender, System::EventArgs^ e) {

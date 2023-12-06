@@ -9,7 +9,7 @@ namespace NS_sql_Function{
 		NS_sql_Map::sqlMap^ oSqlMap;
 	public:
 		sqlFunction(void);
-		System::Data::DataSet^ selectionnerToutesLesPersonnes(System::String^);
+		System::Data::DataSet^ selectionnerToutesLesPersonnes(System::String^, System::String^);
 	};
 }
 
