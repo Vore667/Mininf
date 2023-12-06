@@ -12,3 +12,10 @@ C:\Users\arthu\source\repos\ProjetPoo\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.F
 C:\Users\arthu\source\repos\ProjetPoo\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.MyForm.resources
 C:\Users\arthu\source\repos\ProjetPoo\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.FormPersonnel.resources
 C:\Users\arthu\source\repos\ProjetPoo\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.vcxproj.GenerateResource.cache
+C:\Users\33637\Documents\GitHub\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.vcxproj.AssemblyReference.cache
+C:\Users\33637\Documents\GitHub\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.FormClient.resources
+C:\Users\33637\Documents\GitHub\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.FormStatistiques.resources
+C:\Users\33637\Documents\GitHub\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.FormStock.resources
+C:\Users\33637\Documents\GitHub\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.MyForm.resources
+C:\Users\33637\Documents\GitHub\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.FormPersonnel.resources
+C:\Users\33637\Documents\GitHub\Mininf\ProjetPoo\obj\x64\Debug\ProjetPoo.vcxproj.GenerateResource.cache
