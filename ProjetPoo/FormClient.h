@@ -35,8 +35,8 @@ namespace ProjetPoo {
 				delete components;
 			}
 		}
-	private: NS_sql_Function::sqlFunction^ oSvc;
-	private: System::Data::DataSet^ oDs;
+	//private: NS_sql_Function::sqlFunction^ oSvc;
+	//private: System::Data::DataSet^ oDs;
 
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 
@@ -50,7 +50,7 @@ namespace ProjetPoo {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ btnAffiche;
 	private: System::Windows::Forms::Button^ btnInsere;
-	private: System::Windows::Forms::Button^ btnModif;
+	private: System::Windows::Forms::Button^ btnModifier;
 	private: System::Windows::Forms::Button^ btnSupp;
 
 	private: System::Windows::Forms::Panel^ panelInserer;
@@ -173,7 +173,7 @@ namespace ProjetPoo {
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->btnAffiche = (gcnew System::Windows::Forms::Button());
 			this->btnInsere = (gcnew System::Windows::Forms::Button());
-			this->btnModif = (gcnew System::Windows::Forms::Button());
+			this->btnModifier = (gcnew System::Windows::Forms::Button());
 			this->btnSupp = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->panelDelete->SuspendLayout();
@@ -423,7 +423,7 @@ namespace ProjetPoo {
 			this->panelModifier->Controls->Add(this->textBox18);
 			this->panelModifier->Controls->Add(this->label21);
 			this->panelModifier->Controls->Add(this->label22);
-			this->panelModifier->Location = System::Drawing::Point(1, 2);
+			this->panelModifier->Location = System::Drawing::Point(179, 195);
 			this->panelModifier->Margin = System::Windows::Forms::Padding(2);
 			this->panelModifier->Name = L"panelModifier";
 			this->panelModifier->Size = System::Drawing::Size(598, 271);
@@ -691,19 +691,19 @@ namespace ProjetPoo {
 			this->btnInsere->UseVisualStyleBackColor = true;
 			this->btnInsere->Click += gcnew System::EventHandler(this, &FormClient::btnInsere_Click);
 			// 
-			// btnModif
+			// btnModifier
 			// 
-			this->btnModif->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+			this->btnModifier->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left));
-			this->btnModif->Location = System::Drawing::Point(9, 332);
-			this->btnModif->Margin = System::Windows::Forms::Padding(2);
-			this->btnModif->MinimumSize = System::Drawing::Size(167, 62);
-			this->btnModif->Name = L"btnModif";
-			this->btnModif->Size = System::Drawing::Size(167, 62);
-			this->btnModif->TabIndex = 4;
-			this->btnModif->Text = L"Mode Modifier";
-			this->btnModif->UseVisualStyleBackColor = true;
-			this->btnModif->Click += gcnew System::EventHandler(this, &FormClient::btnModif_Click);
+			this->btnModifier->Location = System::Drawing::Point(9, 332);
+			this->btnModifier->Margin = System::Windows::Forms::Padding(2);
+			this->btnModifier->MinimumSize = System::Drawing::Size(167, 62);
+			this->btnModifier->Name = L"btnModifier";
+			this->btnModifier->Size = System::Drawing::Size(167, 62);
+			this->btnModifier->TabIndex = 4;
+			this->btnModifier->Text = L"Mode Modifier";
+			this->btnModifier->UseVisualStyleBackColor = true;
+			this->btnModifier->Click += gcnew System::EventHandler(this, &FormClient::btnModifier_Click);
 			// 
 			// btnSupp
 			// 
@@ -726,10 +726,11 @@ namespace ProjetPoo {
 			this->ClientSize = System::Drawing::Size(785, 472);
 			this->Controls->Add(this->panelInserer);
 			this->Controls->Add(this->btnSupp);
-			this->Controls->Add(this->btnModif);
+			this->Controls->Add(this->btnModifier);
 			this->Controls->Add(this->btnInsere);
 			this->Controls->Add(this->btnAffiche);
 			this->Controls->Add(this->panelDelete);
+			this->Controls->Add(this->panelModifier);
 			this->Controls->Add(this->dataGridView1);
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->MinimumSize = System::Drawing::Size(803, 519);
@@ -755,7 +756,7 @@ namespace ProjetPoo {
 		this->panelAfficher->Hide();
 		this->panelInserer->Hide();
 		this->panelModifier->Hide();
-		oSvc = gcnew NS_sql_Function::sqlFunction();
+		//oSvc = gcnew NS_sql_Function::sqlFunction();
 	}
 	private: System::Void btnSupp_Click(System::Object^ sender, System::EventArgs^ e) {
 
@@ -764,7 +765,7 @@ namespace ProjetPoo {
 		this->panelInserer->Hide();
 		this->panelModifier->Hide();
 	}
-	private: System::Void btnModif_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void btnModifier_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->panelDelete->Hide();
 		this->panelAfficher->Hide();
 		this->panelInserer->Hide();
